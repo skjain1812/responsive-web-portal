@@ -5,11 +5,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-sidebar',
   standalone: true,
   imports: [MatListModule, RouterLink],
-  template: `
-    <mat-nav-list>
-      <a mat-list-item routerLink="/">Users</a>
-      <a mat-list-item routerLink="/settings">Settings</a>
-    </mat-nav-list>
-  `,
+  templateUrl: './sidebar.component.html',
+  styleUrls: [`./sidebar.component.css`],
 })
 export class SidebarComponent {}

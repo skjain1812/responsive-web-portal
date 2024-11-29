@@ -6,14 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-header',
   standalone: true,
   imports: [MatToolbarModule, MatIconModule],
-  template: `
-    <mat-toolbar color="primary">
-      <button mat-icon-button (click)="toggleSidebar.emit()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>My App</span>
-    </mat-toolbar>
-  `,
+  templateUrl: `./header.component.html`,
 })
 export class HeaderComponent {
   @Output() toggleSidebar = new EventEmitter<void>();

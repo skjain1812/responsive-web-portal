@@ -1,0 +1,25 @@
+.sidebar {
+    width: 200px; /* Fixed width for the sidebar */
+    min-width: 150px; /* Ensures minimum width for smaller screens */
+    max-width: 250px; /* Caps the maximum width */
+    height: 100vh;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 150px; /* Adjust width for smaller screens */
+    }
+  }
+
+  mat-nav-list {
+    padding: 0;
+  }
+
+  a[mat-list-item] {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }

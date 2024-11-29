@@ -9,23 +9,7 @@ import { MatSidenavContent } from '@angular/material/sidenav';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, SidebarComponent, MatSidenav, MatSidenavContainer, MatSidenavContent],
-  template: `
-    <app-header (toggleSidebar)="sidenav.toggle()"></app-header>
-    <mat-sidenav-container>
-      <mat-sidenav #sidenav mode="side" opened>
-        <app-sidebar></app-sidebar>
-      </mat-sidenav>
-      <mat-sidenav-content>
-        <router-outlet></router-outlet>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
-  `,
-  styles: [
-    `
-      mat-sidenav-container {
-        height: 100vh;
-      }
-    `,
-  ],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {}
