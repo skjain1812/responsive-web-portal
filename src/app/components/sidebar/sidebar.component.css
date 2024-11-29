@@ -1,25 +1,28 @@
 .sidebar {
-    width: 200px; /* Fixed width for the sidebar */
-    min-width: 150px; /* Ensures minimum width for smaller screens */
-    max-width: 250px; /* Caps the maximum width */
-    height: 100vh;
-    background-color: #f4f4f4;
-    overflow-y: auto;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
+  width: 200px; /* Adjust this width as required */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f4f4f4;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  min-width: min-content;
+}
 
-  @media (max-width: 768px) {
-    .sidebar {
-      width: 150px; /* Adjust width for smaller screens */
-    }
+@media (max-width: 768px) {
+  .sidebar {
+    width: 150px; /* Adjust width for smaller screens */
   }
+}
 
-  mat-nav-list {
-    padding: 0;
-  }
+.mat-nav-list {
+  padding: 0; /* Remove padding applied by Angular Material */
+  margin: 0; /* Remove margin applied by Angular Material */
+}
 
-  a[mat-list-item] {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-  }
+a[mat-list-item] {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}

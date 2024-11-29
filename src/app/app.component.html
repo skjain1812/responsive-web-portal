@@ -1,8 +1,6 @@
-
-
 <app-header (toggleSidebar)="sidenav.toggle()"></app-header>
 <mat-sidenav-container>
-  <mat-sidenav #sidenav mode="side" opened>
+  <mat-sidenav #sidenav mode="over" closed>
     <app-sidebar></app-sidebar>
   </mat-sidenav>
   <mat-sidenav-content>
